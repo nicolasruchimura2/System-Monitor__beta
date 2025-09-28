@@ -1,3 +1,23 @@
+# System-Monitor__beta
+
+
+
+
+# Core Components
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   Data Layer    │────│  Display Layer  │────│   Input Layer   │
+│  (collectors)   │    │   (ncurses)     │    │  (keyboard)     │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+         │                       │                       │
+         └───────────────────────┼───────────────────────┘
+                                 │
+                    ┌─────────────────┐
+                    │  Control Loop   │
+                    │   (main.c)      │
+                    └─────────────────┘
+
+# File Structure:
+
 sysmon/
 ├── src/
 │   ├── main.c          # Main loop & coordination
